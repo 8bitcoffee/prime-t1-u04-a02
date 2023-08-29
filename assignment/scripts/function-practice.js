@@ -5,10 +5,12 @@ console.log('***** Function Practice *****');
 // to test it and display the result
 
 /**
- * Uses the question number to select the div where the result populates
+ * Uses the question number to set the div where the result populates
+ * Then shows the value of htmlBody on the DOM in that div
  * 
  * @param {String} question // String of question number
- * @param {String} htmlBody // Output to have in DOM 
+ * @param {String} htmlBody // What the question div will show on the DOM
+ * @return {undefined} // No return value made.
  */
 
 function returnDivInner(question = '1', htmlBody = ''){
@@ -30,8 +32,8 @@ function hello() {
 
 // Call the function to test
 
-console.log('Test - should say "Hello World!\n"', hello());
-returnDivInner(questionNum,`Test - should say "Hello World!: ${hello()}`);
+console.log('Test - should return "Hello World!\n"', hello());
+returnDivInner(questionNum,`Test - should return 'Hello World!' : ${hello()}`);
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
@@ -184,8 +186,8 @@ function allPositive(inputArray) {
   }
   return posArray;
 }
-console.log("Test - should return '7,4': ", allPositive([-2,-7,7,-9,4]));
-returnDivInner(questionNum,`Test - should return '7,4': ${allPositive([-2,-7,7,-9,4])}`);
+console.log("Test - should return '7,4' : ", allPositive([-2,-7,7,-9,4]));
+returnDivInner(questionNum,`Test - should return '7,4' : ${allPositive([-2,-7,7,-9,4])}`);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
@@ -224,7 +226,7 @@ console.log("Test - should return '180300': ", addUp(600));
 // -------
 
 returnDivInner(questionNum,`
-Used problem from: <a href='https://edabit.com/challenge/4gzDuDkompAqujpRi'>
+Used problem from: <a id='ref' href='https://edabit.com/challenge/4gzDuDkompAqujpRi'>
   https://edabit.com/challenge/4gzDuDkompAqujpRi<a><br></br>
 
 Add up the Numbers from a Single Number<br>
@@ -242,20 +244,18 @@ addUp(600) ➞ 180300<br>
 Notes:<br>
 Expect any positive number between 1 and 1000.<br></br>
 
-______________________________________<br></br>
+<hr><br>
 function addUp(numToAdd){<br>
-&nbsp&nbsplet retTotal = 0<br>
-&nbsp&nbspfor (let i = 1; i <= numToAdd; i += 1){<br>
-&nbsp&nbsp&nbsp&nbspretTotal += i;<br>
-&nbsp&nbsp}<br>
-&nbsp&nbspreturn retTotal;<br>
-}<br></br><br></br>
+<div class ="line2">retTotal = 0</div><br>
+<div class = "line2">for (let i = 1; i <= numToAdd; i += 1)</div><br>
+<div class = "line3">retTotal += i;</div><br>
+<div class = "line2">}</div><br>
+<div class = "line2">return retTotal;</div><br>
+}<br></br>
 
 Test - should return '10': ${addUp(4)}<br>
 Test - should return '91': ${addUp(13)}<br>
 Test - should return '180300': ${addUp(600)}<br></br>
-______________________________________
-
 `);
 
 
