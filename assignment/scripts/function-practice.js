@@ -47,8 +47,8 @@ function helloName(name) {
 
 // Remember to call the function to test
 
-console.log("Test - should say 'Hello Chris!'\n", helloName("Chris"));
-returnDivInner(questionNum,`Test - should say 'Hello Chris!': ${helloName('Chris')}`);
+console.log("Test - should return 'Hello Chris!'\n", helloName("Chris"));
+returnDivInner(questionNum,`Test - should return 'Hello Chris!': ${helloName('Chris')}`);
 
 // 3. Function to add two numbers together & return the result
 
@@ -92,14 +92,14 @@ function isPositive(number) {
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
-console.log('isPositive - should say true', isPositive(3));
-console.log('isPositive - should say false', isPositive(0));
-console.log('isPositive - should say false', isPositive(-3));
+console.log('isPositive - should return true', isPositive(3));
+console.log('isPositive - should return false', isPositive(0));
+console.log('isPositive - should return false', isPositive(-3));
 
 returnDivInner(questionNum,`
-  isPostitive - should say 'true': ${isPositive(3)} <br>
-  isPostitive - should say 'false': ${isPositive(0)} <br>
-  isPostitive - should say 'false': ${isPositive(-3)}`)
+  isPostitive - should return 'true': ${isPositive(3)} <br>
+  isPostitive - should return 'false': ${isPositive(0)} <br>
+  isPostitive - should return 'false': ${isPositive(-3)}`)
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -147,11 +147,11 @@ questionNum = '8';
 function isFirstLetter(letter, string) {
   return string[0] == letter ? true : false;
 }
-console.log("isFirstLetter - should say 'true'", isFirstLetter('a', 'apple'));
-console.log("isFirstLetter - should say 'false'", isFirstLetter('z', 'apple'));
+console.log("isFirstLetter - should return 'true'", isFirstLetter('a', 'apple'));
+console.log("isFirstLetter - should return 'false'", isFirstLetter('z', 'apple'));
 returnDivInner(questionNum,`
-  isFirstLetter - should say 'true': ${isFirstLetter('a', 'apple')}<br>
-  isFirstLetter - should say 'false': ${isFirstLetter('z', 'apple')}`)
+  isFirstLetter - should return 'true': ${isFirstLetter('a', 'apple')}<br>
+  isFirstLetter - should return 'false': ${isFirstLetter('z', 'apple')}`)
 
 // 9. Function to return the sum of all numbers in an array
 
